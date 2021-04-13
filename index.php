@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="header d-flex justify-content-center d-flex flex-wrap align-content-center">
-                   Consumo API de CEP 
+                   Consumir API de CEP 
                 </div>   
             </div> 
         </div>
@@ -23,6 +23,7 @@
             <div class="col-6 digita-area">
                 <div>
                     <form class="form-cep" >
+                        CEP : <br/>
                         <input id="cep" class="input-cep"  type="text" placeholder="digite seu CEP">
                         <button id="procurarCep">Procurar CEP</button>
                     </form>
@@ -30,10 +31,14 @@
             </div>
             <div class="col-6 resposta-area">
                 <div>
-                    <input type="text" class="input-resposta">
-                    <input type="text"  class="input-resposta">
-                    <input type="text"  class="input-resposta">
-                    <input type="text"  class="input-resposta">
+                    Endereço : <br/>
+                    <input type="text"  id="logradouro" class="input-resposta">
+                    Bairro : <br/>
+                    <input type="text"  id="bairro" class="input-resposta">
+                    DDD : <br/>
+                    <input type="text"  id="ddd" class="input-resposta">
+                    UF : <br/>
+                    <input type="text"  id="uf" class="input-resposta">
                 </div>
             </div>
         </div>
@@ -44,6 +49,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="assets/js/inputmask.min.js"></script>
+<script src="assets/js/jquery.inputmask.min.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
 </html>
