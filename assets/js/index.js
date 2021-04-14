@@ -10,8 +10,11 @@ $('#procurarCep').on('click', function (e) {
     let url = 'https://viacep.com.br/ws/'+cep+'/json/';
     if (cep != ''){
         $.ajax({
-            type: "GET",
-            url: url,
+            type: "POST",
+            url: 'src/requisitaAPI.php',
+            data: {
+                url : url
+            },
             dataType: "json",
             success: function (response) {
                 if(response.erro == undefined ){
